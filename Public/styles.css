@@ -1,0 +1,287 @@
+/* General Styles */
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-conatainer {
+  background-color: #323131;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.chat-container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #323131;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-message {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 15px 15px 0 15px;
+  max-width: 70%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 15px 15px 15px 0;
+  max-width: 70%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: calc(100%); 
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+#user-input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 80%;
+}
+
+#submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #cecece;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formClass {
+  width: 90%;
+  height: 2.3rem;
+  margin: 0.8rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.formClass1 {
+  width: 90%;
+  height: 1.1rem;
+  margin: 0.8rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0.2rem;
+}
+
+#formButton {
+  width: 35%;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+}
+
+#formButton:hover {
+  width: 35%;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  transform: scale(1.05);
+}
+
+select {
+  height: 1.5rem;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+  .body-conatainer {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .body-conatainer {
+    width: 70%;
+  }
+
+  .user-message, .bot-message {
+    max-width: 80%;
+  }
+
+  #user-input {
+    width: 70%;
+  }
+
+  #submit-button {
+    padding: 8px 16px;
+  }
+
+  .formClass {
+    height: 2rem;
+  }
+
+  .formClass1 {
+    height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .body-conatainer {
+    width: 80%;
+  }
+
+  .user-message, .bot-message {
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  #user-input {
+    width: 80%;
+  }
+
+  #submit-button {
+    padding: 6px 12px;
+  }
+
+  .formClass {
+    height: 1.8rem;
+  }
+
+  .formClass1 {
+    height: 0.8rem;
+  }
+
+  label {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .body-container {
+    width: 90%;
+  }
+
+  .user-message, .bot-message {
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  #user-input {
+    width: 80%;
+  }
+
+  #submit-button {
+    padding: 4px 8px;
+  }
+
+  .formClass {
+    height: 1.5rem;
+  }
+
+  .formClass1 {
+    height: 0.7rem;
+  }
+
+  label {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .body-container {
+    width: 95%;
+  }
+
+  .chat-container {
+    width: 80%;
+  }
+
+  .user-message, .bot-message {
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  #user-input {
+    width: 65%;
+    height: 20px;
+  }
+
+  #submit-button {
+    padding: 4px 8px;
+  }
+
+  .formClass {
+    height: 1.5rem;
+  }
+
+  .formClass1 {
+    height: 0.7rem;
+  }
+
+  label {
+    font-size: 14px;
+  }
+  .formClass {
+    width: 90%;
+    height: 2.8rem;
+    margin: 0.8rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .formClass1 {
+    width: 90%;
+    height: 1.1rem;
+    margin: 0.8rem;
+
+  }
+}
