@@ -51,7 +51,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve index.html file when root URL is accessed
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+   // res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.get('/message', async (req, res) => {
